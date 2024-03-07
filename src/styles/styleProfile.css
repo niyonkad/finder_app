@@ -1,0 +1,35 @@
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  100vh; /*Adjust as needed*/
+    /* weight: 100px; */
+    /* background-color: #121212; */
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap:  20px; /* Adjust the gap between form fields */
+  }
+
+.container .form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    color:rgb(115, 145, 171);
+}
+
+.form-field textarea::placeholder {
+    color: #999; /* Change to your preferred color */
+}
+.container .upload-button {
+    align-self: center;
+    margin-top:  30px; /* Adjust as needed */
+}
