@@ -16,7 +16,7 @@ from decouple import config
 from dotenv import load_dotenv
 
 # Reload environment variables on startup to avoid caching them.
-load_dotenv(verbose=True, override=True)
+load_dotenv(dotenv_path="../.env.prod", verbose=True, override=True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -135,8 +135,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = "static/"
-STATIC_ROOT = "./staticfiles/"
+STATIC_URL = "django-static/"
+STATIC_ROOT = "/staticfiles/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -158,3 +158,5 @@ REST_FRAMEWORK = {
 AUTH_USER_MODEL = "account.CustomUser"
 
 AUTHENTICATION_BACKENDS = ["account.backends.EmailorUsernameBackend"]
+
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
