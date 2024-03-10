@@ -15,6 +15,8 @@ RUN pip install -r requirements.txt
 
 COPY . /backend
 
+RUN chmod +x ./entrypoint-api.sh
+
 RUN chown -R myuser:myuser /backend
 
 USER myuser
