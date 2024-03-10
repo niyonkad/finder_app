@@ -1,5 +1,6 @@
 import React, { Component, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Button from '@mui/material/Button';
 import "../styles/styleLogin.css";
 
 function LoginComponent() {
@@ -60,7 +61,8 @@ function LoginComponent() {
           </label>
         </fieldset>
 
-        <button onClick={buttonClicked}>Submit</button>
+        {/* <button onClick={buttonClicked}>Submit</button> */}
+        <Button variant="contained" onClick={buttonClicked}>Submit</Button>
       </div>
     </div>
   );
