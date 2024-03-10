@@ -1,0 +1,22 @@
+[
+	{
+		"bio": "Sofware Developer with a passion for teaching",
+		"image_url": "001.webp",
+		"name": "John Doe"
+	},
+	{
+		"bio": "DevOps Manager at Amazon Web Services",
+		"image_url": "004.webp",
+		"name": "Jane Smith"
+	},
+	{
+		"bio": "Senior Staff Engineer at Google",
+		"image_url": "002.webp",
+		"name": "Jack Johnson"
+	},
+	{
+		"bio": "Frontend Developer at Facebook",
+		"image_url": "003.webp",
+		"name": "Emily Davis"
+	}
+]
