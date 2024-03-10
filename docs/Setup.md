@@ -20,7 +20,8 @@
 
     ```bash
     python -m venv .venv
-    source .venv/bin/activate
+    source .venv/bin/activate (on MacOS/Linux)
+    source .venv/Scripts/activate (on Windows)
     ```
 
 3. Install Dependencies:
