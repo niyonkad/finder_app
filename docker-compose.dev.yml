@@ -5,7 +5,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    image: backend-api:1.0
+    image: devlinks-api:1.0
     expose:
       - "8000"
     entrypoint: ./entrypoint-api.sh
@@ -39,6 +39,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    image: devlinks-frontend:1.0
     volumes:
       - frontend_build:/frontend/build
 
