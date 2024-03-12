@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
 import WelcomePage from './components/WelcomePage';
-import Navbar from './components/Navbar';
+import ProtectedRoute from './components/ProtectedRoute'
 import NotFound from './components/404';
 import Profile from './components/Profile';
 
@@ -15,11 +15,14 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" index element={<Home />} />
-          <Route path="/welcome" element={<WelcomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/profile" element={<Profile />} />
+          {/* Protected routes */}
+          <Route element={<ProtectedRoute />}>
+            <Route path="/feed" element={<WelcomePage />} />
+            <Route path="/profile" element={<Profile />} />
+          </Route>
 
         </Routes>
       </Router>
