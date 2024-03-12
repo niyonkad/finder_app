@@ -88,36 +88,6 @@ function RegisterComponent() {
 			}
 			errRef.current.focus()
 		}
-	 /*      // Check if all the fields are filled
-		if (firstName === "" || lastName === "" || username === "" || email === "" || password === "" || pass2 === "" || skills === "") {
-			alert('Please fill in all the fields')
-			return
-				}
-				// Check if the passwords match
-				if (password !== pass2) {
-					alert('Passwords do not match')
-					return
-				}
-				// Check if the email is valid
-				if (!email.includes('@')) {
-					alert('Please enter a valid email')
-					return
-				}
-				// Check if the password is valid
-				if (password.length < 8) {
-					alert('Password must be at least 8 characters long')
-					return
-				}
-				// Check if the school is selected
-				if (school === "") {
-					alert('Please select your school')
-					return
-				}
-				// Check if the languages are entered
-		if (skills.length < 1) {
-			alert('Please enter the languages you are comfortable with')
-			return
-				} */
 
 		console.log('Form submitted')
 	}
